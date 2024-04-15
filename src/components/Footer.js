@@ -2,6 +2,7 @@ import React from 'react';
 import { faXTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -38,16 +39,16 @@ function Footer() {
                 <h2 className="text-sm font-semibold mb-4 uppercase">Navigation</h2>
                 <ul className="text-gray-400">
                   <li className="mb-2">
-                    <a href="#" className="hover:text-gray-200">Home</a>
+                    <Link to="/" className="hover:text-gray-200">Home</Link>
                   </li>
                   <li className="mb-2">
-                    <a href="#" className="hover:text-gray-200">Trading</a>
+                    <Link to="/trading" className="hover:text-gray-200">Trading</Link>
                   </li>
                   <li className="mb-2">
-                    <a href="#" className="hover:text-gray-200">Shipping</a>
+                    <Link to="/about" className="hover:text-gray-200">About Us</Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-gray-200">Contact Us</a>
+                    <Link to="/contact" className="hover:text-gray-200">Contact Us</Link>
                   </li>
                 </ul>
               </div>
