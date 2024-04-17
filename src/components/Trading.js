@@ -8,7 +8,7 @@ function Trading() {
             <div className='max-w-2xl'>
                 <h3 className='text-red-500 text-2xl font-mono font-extrabold'>- Trading</h3>
                 <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white mt-4">Get back to <span className='decoration-solid underline underline-offset-[11px] decoration-green-600'>growth </span> with our <span class="text-violet-600 dark:text-red-500">#1 Trading</span> services.</h1>
-                <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-200 mt-8">Our mission is to provide high-quality and cost-effective solutions for the transportation of goods and oil products across the Black and Caspian seas. We aim to deliver value to our customers, partners, and employees through our professionalism, integrity, and innovation.</p>
+                <p class="text-lg font-normal lg:text-xl text-gray-200 mt-8">Our mission is to provide high-quality and cost-effective solutions for the transportation of goods and oil products across the Black and Caspian seas. We aim to deliver value to our customers, partners, and employees through our professionalism, integrity, and innovation.</p>
             </div>
             
           </div>
