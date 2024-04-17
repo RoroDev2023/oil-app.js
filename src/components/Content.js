@@ -8,7 +8,7 @@ const Content = () => {
             <section class="bg-gray-300">
                 <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                     <div class="font-light text-gray-900 sm:text-lg">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 uppercase">We reinvented the wheel</h2>
+                        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 uppercase">We reinvented the wheel</h2>
                         <p class="mb-4 mt-8">At True Holding LLC, we are more than just an oil and gas company. We are architects of energy, visionaries who understand that the world’s progress hinges on reliable, sustainable energy sources. Our journey began with a commitment to excellence, and today, we stand as a beacon of innovation and reliability in the industry.</p>
                         <p className=''>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
                     </div>
