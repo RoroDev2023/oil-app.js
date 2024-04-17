@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="bg-white dark:bg-[#111111] w-full top-0 start-0">
+      <nav className="bg-[#111111] w-full top-0 start-0">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
