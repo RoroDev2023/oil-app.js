@@ -40,14 +40,14 @@ const Carousel = () => {
     <>
       <div className="bg-gray-300"> 
         <div className="flex justify-center flex-col items-center align-center w-full h-[700px] mx-auto bg-gray-300 max-w-screen-xl ">
-          <hr className=" border-gray-800 dark:border-gray-900 w-full" />
+          <hr className=" border-gray-800 border-gray-900 w-full" />
           <h1 className='font-mono text-2xl mb-8 mt-8 font-extrabold uppercase'>- Our Service Area</h1>
           <FontAwesomeIcon onClick={prevSlide} className='absolute right-5 mr-64 text-black text-4xl cursor-pointer align-center' icon={faCircleArrowRight} />
           <FontAwesomeIcon onClick={nextSlide} className='absolute left-5 ml-64 text-4xl text-black cursor-pointer align-center' icon={faCircleArrowLeft} />
-          <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-3xl  dark:bg-gray-800 dark:hover:bg-gray-700 h-[550px] w-[800px]">
+          <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-3xl  bg-gray-800 hover:bg-gray-700 h-[550px] w-[800px]">
             <div class="flex flex-col justify-center p-4 leading-normal max-w-sm">
               <div className="text-white mb-10 text-6xl font-black max-w-11" style={{ color: 'white' }}>{dataSlider[slide].country}</div>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{dataSlider[slide].text}</p>
+              <p class="mb-3 font-normal text-gray-700 text-gray-400">{dataSlider[slide].text}</p>
             </div>
             {dataSlider.map((item, index) => (
               <div className={index === slide ? 'opacity-100' : 'opacity-0'} key={index}>
