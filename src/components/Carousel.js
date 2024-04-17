@@ -47,7 +47,7 @@ const Carousel = () => {
           <a href="#" class="flex flex-col items-center border border-gray-200 rounded-lg shadow md:flex-row md:max-w-3xl  bg-gray-800 hover:bg-gray-700 h-[550px] w-[800px]">
             <div class="flex flex-col justify-center p-4 leading-normal max-w-sm">
               <div className="text-white mb-10 text-6xl font-black max-w-11" style={{ color: 'white' }}>{dataSlider[slide].country}</div>
-              <p class="mb-3 font-normal text-gray-700 text-gray-400">{dataSlider[slide].text}</p>
+              <p class="mb-3 font-normal text-gray-400">{dataSlider[slide].text}</p>
             </div>
             {dataSlider.map((item, index) => (
               <div className={index === slide ? 'opacity-100' : 'opacity-0'} key={index}>
