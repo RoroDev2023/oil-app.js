@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="bg-[#111111] text-white">
+    <footer className="bg-gradient-to-r from-gray-900 via-gray-900 to-black text-white">
         
       <div className="max-w-screen-xl mx-auto px-4 py-4">
         <div className="flex flex-wrap justify-between mt-16 mb-16">

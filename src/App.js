@@ -6,6 +6,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Trading from "./components/Trading";
 import Feature from "./components/Feature";
+import About from "./components/About";
+import Founder from "./components/Founder";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -17,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<> <FrontPage /> <Content/> <Carousel/>  </>} />
           <Route path="/trading" element={<> <Trading /> <Feature/> </>} />
-          <Route path="/content" element={<Content />} />
+          <Route path="/about" element={<> <Founder /></>} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer/>

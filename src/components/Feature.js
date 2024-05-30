@@ -1,39 +1,56 @@
-import React from 'react'
-import { faEarthAmericas, faOilCan } from '@fortawesome/free-solid-svg-icons'
-import { faOilWell } from '@fortawesome/free-solid-svg-icons'
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react';
+import { faEarthAmericas, faOilWell, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Feature() {
   return (
-    <div>
-        <section class="bg-white">
-            <div class="py-16 px-4 mx-auto max-w-screen-xl sm:py-24 lg:px-6">
-                <div class="max-w-screen-md mb-8 lg:mb-16">
-                    <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-gray-900">Our Focus</h2>
-                    <p class="text-gray-500 sm:text-xl mt-8">Here at True Holding LLC we focus on providing quick and efficient shipping, trading and lucrative ventures in the world of Oil, Gas, and Logistics.</p>
-                </div>
-                <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-28 mb-8">
-                    <div>
-                        <FontAwesomeIcon icon={faOilWell} className="text-3xl mb-6 text-blue-600 rounded-full p-2 bg-blue-200 border-blue-500 border-4" />
-                        <h3 class="mb-2 text-xl font-bold ">•  Oil and Gas</h3>
-                        <p class="text-gray-500">True Holding LLC operates at the heart of the United Arab Emirates, strategically positioned to serve clients worldwide. We specialize in the supply of high-quality oil and gas products.</p>
-                    </div>
-                    <div>
-                        <FontAwesomeIcon icon={faEarthAmericas} className="text-3xl mb-6 text-red-600 rounded-full p-2 bg-red-200 border-red-500 border-4"/>
-                        <h3 class="mb-2 text-xl font-bold ">•  Global Reach</h3>
-                        <p class="text-gray-500">From the deserts of the Middle East to bustling metropolises, our reach knows no bounds. We connect suppliers and consumers across continents, ensuring seamless trade.</p>
-                    </div>
-                    <div>
-                        <FontAwesomeIcon icon={faBriefcase} className="text-3xl mb-6 text-yellow-600 rounded-full p-2 bg-yellow-100 border-yellow-500 border-4" />
-                        <h3 class="mb-2 text-xl font-bold ">•  Variety of Products</h3>
-                        <p class="text-gray-500">Our portfolio includes crude oil, refined petroleum products, liquefied natural gas (LNG), and specialty gases. Quality and reliability define every product we offer.</p>
-                    </div>
-                </div>
+    <section className="bg-gray-100 py-28">
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-extrabold text-gray-900">Our Focus</h2>
+          <p className="text-gray-600 text-lg mt-8">
+            At True Holding LLC, we excel in providing swift and efficient shipping, trading, and lucrative ventures in the oil, gas, and logistics sectors.
+          </p>
+        </div>
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+          <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <div className="flex items-center justify-center mb-6">
+              <FontAwesomeIcon icon={faOilWell} className="text-3xl text-blue-600 rounded-full p-2 bg-blue-200 border-blue-500 border-4" />
             </div>
-        </section>
-    </div>
-  )
+            <h3 className="text-xl font-bold text-gray-800 text-center mb-2">Oil and Gas</h3>
+            <p className="text-gray-600 text-center">
+              True Holding LLC operates at the heart of the UAE, serving clients worldwide with high-quality oil and gas products.
+            </p>
+          </div>
+          <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <div className="flex items-center justify-center mb-6">
+              <FontAwesomeIcon icon={faEarthAmericas} className="text-3xl text-red-600 rounded-full p-2 bg-red-200 border-red-500 border-4"/>
+            </div>
+            <h3 className="text-xl font-bold text-gray-800 text-center mb-2">Global Reach</h3>
+            <p className="text-gray-600 text-center">
+              Our reach spans from the Middle East to bustling metropolises, connecting suppliers and consumers across continents.
+            </p>
+          </div>
+          <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <div className="flex items-center justify-center mb-6">
+              <FontAwesomeIcon icon={faBriefcase} className="text-3xl text-yellow-600 rounded-full p-2 bg-yellow-200 border-yellow-500 border-4" />
+            </div>
+            <h3 className="text-xl font-bold text-gray-800 text-center mb-2">Variety of Products</h3>
+            <p className="text-gray-600 text-center">
+              Our portfolio includes crude oil, refined petroleum products, LNG, and specialty gases, ensuring quality and reliability in every product.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Feature
+export default Feature;
+
+
+// {/* <div>
+//     <FontAwesomeIcon icon={faEarthAmericas} className="text-3xl mb-6 text-red-600 rounded-full p-2 bg-red-200 border-red-500 border-4"/>
+//     <h3 class="mb-2 text-xl font-bold ">•  Global Reach</h3>
+//     <p class="text-gray-500">From the deserts of the Middle East to bustling metropolises, our reach knows no bounds. We connect suppliers and consumers across continents, ensuring seamless trade.</p>
+// </div> */}
