@@ -87,15 +87,15 @@ function Footer() {
         <div className="flex items-center justify-between">
           <span className="text-xs text-gray-400">© 2024 <a href="#" className="hover:text-gray-200">True Holding LLC</a>. All Rights Reserved.</span>
           <div className="flex space-x-5">
-            <a href="#" className="text-gray-400 hover:text-gray-200">
+            <a href="twitter icon" className="text-gray-400 hover:text-gray-200">
               <FontAwesomeIcon icon={faXTwitter} className="mr-1" />
               <span className="sr-only">Twitter Community</span>
             </a>
-            <a href="#" className="text-gray-400 hover:text-gray-200">
+            <a href="instagram icon" className="text-gray-400 hover:text-gray-200">
               <FontAwesomeIcon icon={faInstagram} className="mr-1" />
               <span className="sr-only">Instagram Page</span>
             </a>
-            <a href="#" className="text-gray-400 hover:text-gray-200">
+            <a href="facebook icon" className="text-gray-400 hover:text-gray-200">
               <FontAwesomeIcon icon={faFacebook} className="mr-1" />
               <span className="sr-only">Facebook Page</span>
             </a>

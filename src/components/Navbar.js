@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="bg-gradient-to-r from-gray-900 via-gray-900 to-black text-white w-full top-0 start-0">
+      <nav className="bg-gradient-to-r from-gray-900 via-gray-900 to-black text-white w-full top-0 start-0 z-10">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img className="h-11 w-11" src={Logo} alt='Logo'/>

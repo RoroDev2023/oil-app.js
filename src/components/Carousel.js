@@ -1,38 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowLeft, faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
-import Azerbaijan from '../NewImages/az-06-ai-brush-removebg-yj7e7jt5 (1).png'
-import Russia from '../NewImages/RussiaMap.png'
-import Turkey from '../NewImages/turkey-flag-map-removebg (1).png'
-import UAE from '../NewImages/united-arab-emirates-flag-map-vector-design_939093-73-removebg (1).png'
-
+import Azerbaijan from '../NewImages/az-06-ai-brush-removebg-yj7e7jt5 (1).png';
+import Russia from '../NewImages/RussiaMap.png';
+import Turkey from '../NewImages/turkey-flag-map-removebg (1).png';
+import UAE from '../NewImages/united-arab-emirates-flag-map-vector-design_939093-73-removebg (1).png';
 
 const Carousel = () => {
-
   const dataSlider = [
     {
       image: Azerbaijan,
       country: 'Azerbaijan',
-      color: '#ff0000',
-      text: 'Located in the border of Europe and Asia, Azerbaijan plays a crucial role in the world of oil production. Not only is it historically known as an oil country, but it plays a big role in the operations of True Holding LLC.',
+      text: 'Situated at the crossroads of Eastern Europe and Western Asia, Azerbaijan holds a significant position in global oil production. Historically renowned as an oil-rich nation, Azerbaijan plays a vital role in the operations of True Holding LLC, contributing to our strategic growth and influence in the industry.',
     },
     {
       image: Russia,
       country: 'Russia',
-      color: '#00ff00',
-      text: 'With a geographic position that transposes from Europe to the far east side of Europe, Russia is an important player in bridging the clients of oil.',
+      text: 'Spanning across Europe and Asia, Russia is a pivotal player in the global oil market. Its vast geographic expanse and rich natural resources make it a crucial bridge for our clients. At True Holding LLC, we leverage Russia’s strategic importance to facilitate seamless oil trade and foster robust client relationships.',
     },
     {
       image: Turkey,
       country: 'Turkey',
-      color: '#0000ff',
-      text: 'Known historically as a vital country for trade due to its location on the silk road, Turkey has retained the same characteristic throughout centuries, connecting Asia and Europe and bringing in clients from all over the world.',
+      text: 'Historically known as a vital trade hub due to its strategic location on the Silk Road, Turkey continues to be a key player in connecting Asia and Europe. At True Holding LLC, we utilize Turkey’s unique position to attract clients from around the globe, ensuring efficient and effective operations.',
     },
     {
       image: UAE,
       country: 'UAE',
-      color: '#800080',
-      text: 'Country known for its oil production, favourable environment for businesses and all around a high efficient country UAE is not only a country known around the world but also its the headquarters of True Holding LLC.',
+      text: 'The UAE is globally recognized for its significant oil production, business-friendly environment, and high efficiency. As the headquarters of True Holding LLC, the UAE provides an optimal base for our operations, allowing us to thrive in a dynamic and supportive business landscape.',
     },
   ];
 
@@ -58,29 +52,29 @@ const Carousel = () => {
   return (
     <>
       <div className="bg-gray-200 h-[800px] flex items-center justify-center py-12"> 
-        <div className="flex justify-center flex-col items-center align-center w-full mx-auto bg-gray-200 max-w-screen-xl mb-16">
+        <div className="flex justify-center flex-col items-center w-full mx-auto max-w-screen-xl mb-16">
           <hr className=" border-gray-800 w-full" />
           <h1 className='text-3xl mb-12 mt-16 font-extrabold uppercase'>- Our Service Area</h1>
-          <div class="flex items-center justify-center">
-          <FontAwesomeIcon onClick={prevSlide} className='absolute right-5 mr-64 text-black text-4xl cursor-pointer align-center hidden md:block align-middle text-center justify-center content-center ' icon={faCircleArrowRight} />
-          <div class="flex items-center border border-gray-200 rounded-xl shadow flex-row max-w-3xl  bg-gray-800 hover:bg-gray-900 h-[550px] w-[800px]">
-            <div class="flex flex-col justify-center p-4 leading-normal max-w-sm content-center text-center mx-auto">
-              <div className="text-white mb-10 text-6xl font-black" style={{ color: 'white' }}>{dataSlider[slide].country}</div>
-              <p class="mb-3 font-normal text-gray-400">{dataSlider[slide].text}</p>
-            </div>
-            {dataSlider.map((item, index) => (
-              <div className={index === slide ? 'opacity-100' : 'opacity-0'} key={index}>
-                {index === slide && (
-                  <img
-                    className='rounded-lg h-auto lg:w-[450px] p-4 md:w-[20px] md:h-auto transition duration-500 transform hover:scale-105'
-                    src={item.image}
-                    alt={`Slide ${index}`}
-                  />
-                )}
+          <div className="flex items-center justify-center p-8">
+            <FontAwesomeIcon onClick={prevSlide} className='absolute right-5 mr-64 text-gray-800 text-4xl cursor-pointer hidden md:block' icon={faCircleArrowRight} />
+            <div className="relative flex items-center border border-gray-200 rounded-xl shadow-lg flex-row max-w-3xl md:max-w-4xl bg-gray-800 hover:bg-gray-900 h-auto md:h-[550px] w-full md:w-[800px] overflow-hidden">
+              <div className="flex flex-col justify-center p-4 leading-normal text-center mx-auto md:max-w-xs">
+                <div className="text-white my-6 md:mb-10 font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl">{dataSlider[slide].country}</div>
+                <p className="mb-3 font-normal text-gray-300 sm:mb-1 md:mb-1 max-w-lg">{dataSlider[slide].text}</p>
               </div>
-            ))}
-          </div>
-          <FontAwesomeIcon onClick={nextSlide} className='absolute left-5 ml-64 text-4xl text-black cursor-pointer align-center hidden md:block align-middle text-center' icon={faCircleArrowLeft} />
+              {dataSlider.map((item, index) => (
+                <div className={index === slide ? 'opacity-100' : 'opacity-0'} key={index}>
+                  {index === slide && (
+                    <img
+                      className='rounded-lg h-auto w-full max-w-[450px] p-4 transition duration-500 transform hover:scale-105'
+                      src={item.image}
+                      alt={`Slide ${index}`}
+                    />
+                  )}
+                </div>
+              ))}
+            </div>
+            <FontAwesomeIcon onClick={nextSlide} className='absolute left-5 ml-64 text-4xl text-gray-800 cursor-pointer hidden md:block' icon={faCircleArrowLeft} />
           </div>
         </div>
       </div>
@@ -89,3 +83,7 @@ const Carousel = () => {
 }
 
 export default Carousel;
+
+
+
+

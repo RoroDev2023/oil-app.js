@@ -3,13 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTree, faArrowTrendUp, faUserTie } from '@fortawesome/free-solid-svg-icons';
 import FounderImg from '../images/Founder.webp';
 import EmployeeImg from '../images/pngtree-working-employee-3d-character-illustration-png-image_11549018.png'
+import { ReactComponent as VectorImg } from '../images/611bce9c23d78268a9be172b_vector-over-yellow.svg'; // Assuming the SVG is imported as a React component
 
 const Founder = () => {
   return (
-    <div className="bg-gray-100 py-16">
+    <div className="bg-white py-16">
       <div className="max-w-screen-xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold text-gray-900 mb-8">Meet Our Founder, Orxan</h2>
+        <div className="text-center h-auto md:h-[71vh] relative">
+          <h2 className="text-6xl font-bold text-gray-900 mb-8 mt-16">
+            Meet Our Founder, <span className='font-alexbrush font-extrabold text-7xl text-blue-500'>Orxan.</span>
+          </h2>
           <div className="relative inline-block">
             <svg
               className="w-10 h-10 text-gray-400"
@@ -29,15 +32,20 @@ const Founder = () => {
                 src={EmployeeImg}
                 alt="profile"
               />
-              <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-700">
-                <cite class="pe-3 font-medium text-gray-900 dark:text-white"></cite>
-                <cite class="ps-3 text-sm text-gray-600">Employee at True House LLC</cite>
-            </div>
+              <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-700">
+                <cite className="pe-3 font-medium text-gray-900 dark:text-white"></cite>
+                <cite className="ps-3 text-sm text-gray-600">Employee at True House LLC</cite>
+              </div>
             </figcaption>
           </div>
         </div>
 
-        <div className="bg-gray-600 h-0.5 w-full rounded-full my-16"></div>
+        <VectorImg
+         className="absolute right-0 top-36 hidden lg:block"
+         style={{ width: '500px', height: 'auto', transform: 'rotate(40deg)' }} // Apply custom rotation
+       />
+
+        <div className="bg-gray-600 h-0.5 w-full rounded-full mb-16 sm: mt-8"></div>
 
         <h2 className="text-5xl font-extrabold text-gray-900 text-center font-serif mb-16">
           Commitments & Future Goals
@@ -98,7 +106,7 @@ const Founder = () => {
           <h2 className="text-5xl font-extrabold text-gray-900 font-serif mb-12">Contact Us</h2>
           <p className="text-xl text-gray-700 mb-16">
             For inquiries, partnerships, or collaboration, reach out to us at{' '}
-            <span className="font-extrabold text-gray-900">info@trueholdingllc.com</span>. Let’s build a brighter,
+            <span className="font-extrabold text-gray-900">info@trueholdingllc.com</span>. Let's build a brighter,
             more energy-efficient future together.
           </p>
         </div>

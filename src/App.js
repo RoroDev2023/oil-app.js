@@ -6,7 +6,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Trading from "./components/Trading";
 import Feature from "./components/Feature";
-import About from "./components/About";
 import Founder from "./components/Founder";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";

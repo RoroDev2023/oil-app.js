@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const FrontPage = () => {
   return (
-    <section className="relative bg-center bg-no-repeat bg-cover bg-gray-400 bg-blend-multiply h-[93vh]" style={{backgroundImage: `url(${backgroundImage})`}}>
+    <section className="relative bg-center bg-no-repeat bg-cover bg-gray-400 bg-blend-multiply h-[91vh]" style={{backgroundImage: `url(${backgroundImage})`}}>
       <div className="px-4 mx-auto max-w-screen-xl h-full text-left py-32 animate-fadeIn">
         <div>
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl font-mono uppercase animate-slideIn slideIn-delay1">Shipping.</h1>
