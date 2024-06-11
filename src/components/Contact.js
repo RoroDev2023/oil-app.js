@@ -49,7 +49,7 @@ function Contact() {
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-center text-white font-serif">Contact Us</h2>
           <p className="mb-8 lg:mb-16 font-light text-center text-gray-300 sm:text-xl">
-            Got a technical issue? Need details about our Business plan? Let us know.
+            Want to get more information about our services? Need details about our Business plan? Let us know.
           </p>
           <form ref={form} onSubmit={sendEmail} className="space-y-8 bg-[#111827] p-8 rounded-xl">
             <div>
